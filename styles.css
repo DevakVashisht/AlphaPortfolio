@@ -9,6 +9,10 @@
     overflow-x: none;
 } 
 
+body {
+    cursor: none;
+}
+
 html {
     scroll-behavior:smooth;
 }
@@ -266,6 +270,30 @@ video:hover {
     text-decoration: none;
 }
 
+.cursor-dot {
+    width: 10px;
+    height: 10px;
+    background-color: grey;
+}
+
+
+.cursor-outline{
+    width: 45px;
+    height: 45px;
+    border: 2px solid hsla(0, 0%, 0%, 0.5);
+}
+
+.cursor-dot,
+.cursor-outline {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 1;
+    pointer-events: none;
+}
+
 .a:hover {
     text-decoration: none;
     background-color: transparent;
@@ -277,6 +305,8 @@ video:hover {
         width: 95%;
     }
 }
+
+
 
 footer {
     text-align: center;
